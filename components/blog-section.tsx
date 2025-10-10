@@ -6,39 +6,25 @@ import { ArrowRight } from "lucide-react"
 export function BlogSection() {
   const blogPosts = [
     {
-      title: "Cách để thuyết trình hay hơn bằng phương pháp Storytelling",
+      title: "Thời Đại Của Sự Thuyết Phục: Khi Ngôn Ngữ Trở Thành Lợi Thế Cạnh Tranh",
       description: "Cách để thuyết trình hay hơn bằng phương pháp Storytelling",
       image: "/placeholder.svg?height=300&width=400",
       category: "Storytelling",
       link: "/blog/storytelling",
     },
     {
-      title: "Mô đầu thuyết trình chiến lược với SCOA Model trong 60s",
+      title: "Tiếng Anh – Cầu Nối Đưa Doanh Nghiệp Việt Ra Thế Giới",
       description: "Mô đầu bài thuyết trình bằng mô hình SCOA trong 60s",
       image: "/placeholder.svg?height=300&width=400&A+session+business+meeting=",
       category: "Strategy",
       link: "/blog/scoa-model",
     },
     {
-      title: "THE ARENA – Làm chủ kỹ năng trả lời Q&A bằng tiếng Anh cho lãnh đạo",
+      title: "Vai Trò Chiến Lược Của Tiếng Anh Trong Kinh Doanh Toàn Cầu",
       description: "THE ARENA – Làm chủ kỹ năng trả lời Q&A bằng tiếng Anh cho lãnh đạo",
       image: "/placeholder.svg?height=300&width=400",
       category: "Q&A Skills",
       link: "/blog/arena-qa",
-    },
-    {
-      title: "Tiếng Anh Thuyết Trình Cho Quản Lý Cấp Cao: Lộ Trình Học Dựa Trên Khoa Học Andragogy",
-      description: 'cho người trưởng thành "Andragogy"',
-      image: "/placeholder.svg?height=300&width=400",
-      category: "Andragogy",
-      link: "/blog/andragogy",
-    },
-    {
-      title: "Flipped Classroom tại DealTalk – Giải pháp Học Tập Hiệu Quả Cho Người Đi Làm Bận Rộn",
-      description: "Giải pháp tiên bộ nhanh cho người bận rộn",
-      image: "/placeholder.svg?height=300&width=400",
-      category: "Methodology",
-      link: "/blog/flipped-classroom",
     },
   ]
 

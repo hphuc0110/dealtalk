@@ -54,10 +54,9 @@ export function CurriculumSection() {
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             BẠN SẼ NHẬN ĐƯỢC HƠN CẢ MỘT{" "}
-            <span className="text-[#1e3a8a]">KHÓA HỌC</span>
           </h2>
           <h3 className="text-4xl lg:text-5xl font-bold text-[#1e3a8a]">
-            TIẾNG ANH THỰC CHIẾN
+          KHÓA HỌC TIẾNG ANH THỰC CHIẾN
           </h3>
         </div>
 

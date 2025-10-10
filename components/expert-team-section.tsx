@@ -37,7 +37,7 @@ const experts = [
 
 let teachers = [
   {
-    id: 5,
+    id: 1,
     name: "Nguyễn Quý Đạt",
     title: "Giáo viên",
     specialization: "TOEIC & Business English",
@@ -47,7 +47,7 @@ let teachers = [
     image: "/images/teachers/nguyen-quy-dat.webp",
   },
   {
-    id: 6,
+    id: 2,
     name: "Nguyễn Thu Hằng",
     title: "Giáo viên",
     specialization: "IELTS & Multi-level Teaching",
@@ -57,7 +57,7 @@ let teachers = [
     image: "/images/teachers/thu-hang.webp",
   },
   {
-    id: 7,
+    id: 3,
     name: "Cao Hoàng Hà Anh",
     title: "Giáo viên",
     specialization: "IELTS & Academic English",
@@ -77,7 +77,7 @@ let teachers = [
     image: "/images/teachers/chung-anh.webp",
   },
   {
-    id: 3,
+    id: 5,
     name: "Phùng Yến Linh",
     title: "Giáo viên",
     specialization: "Conversation & Pronunciation",
@@ -86,7 +86,7 @@ let teachers = [
     image: "/images/teachers/yen-linh.webp",
   },
   {
-    id: 2,
+    id: 6,
     name: "Vũ Thị Khánh Vi",
     title: "Giáo viên",
     specialization: "Business English & Writing",
@@ -96,7 +96,7 @@ let teachers = [
     image: "/images/teachers/vi.webp",
   },
   {
-    id: 1,
+    id: 7,
     name: "Vũ Bình Dương",
     title: "Giáo viên",
     specialization: "General English & Kids English",

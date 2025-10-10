@@ -3,22 +3,22 @@ import { BlogCard } from "./blog-card"
 const blogPosts = [
   {
     id: "star-method",
-    title: "Tiếng Anh Thuyết Trình Học Thuật – Chìa Khóa Thống Lĩnh Hội Thảo Quốc Tế",
-    image: "/images/1.webp",
+    title: "Thời Đại Của Sự Thuyết Phục: Khi Ngôn Ngữ Trở Thành Lợi Thế Cạnh Tranh",
+    image: "/images/1.jpg",
     category: "Phỏng vấn",
     readTime: "5 phút đọc",
   },
   {
     id: "experience-storytelling",
-    title: "Nâng Tầm Nghiên Cứu Với Tiếng Anh Thuyết Trình Học Thuật – Sức Mạnh Của Storytelling",
-    image: "/images/2.webp",
+    title: "Tiếng Anh – Cầu Nối Đưa Doanh Nghiệp Việt Ra Thế Giới",
+    image: "/images/2.jpg",
     category: "Kỹ năng giao tiếp",
     readTime: "6 phút đọc",
   },
   {
     id: "tell-me-about-yourself",
-    title: "7 Tips Vàng Giúp Thuyết Trình Học Thuật Bằng Tiếng Anh Tự Tin Và Thuyết Phục",
-    image: "/images/3.webp",
+    title: "Vai Trò Chiến Lược Của Tiếng Anh Trong Kinh Doanh Toàn Cầu",
+    image: "/images/3.jpg",
     category: "Phỏng vấn",
     readTime: "7 phút đọc",
   },
