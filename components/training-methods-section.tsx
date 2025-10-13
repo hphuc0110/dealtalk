@@ -36,10 +36,10 @@ export function TrainingMethodsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 mx-auto max-w-2xl">
-            <h2 className="text-4xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
               CÁ NHÂN HÓA TUYỆT ĐỐI
             </h2>
-            <h2 className="text-4xl lg:text-3xl font-bold italic text-white mb-4 drop-shadow-lg">
+            <h2 className="text-1xl lg:text-3xl font-bold italic text-white mb-4 drop-shadow-lg">
               Nội dung được điều chỉnh dựa trên thông tin và thách thức thực tế của học viên
             </h2>
           </div>
