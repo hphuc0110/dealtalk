@@ -1,10 +1,20 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { RefreshCw, User, Users, Shield } from "lucide-react"
 
 export function MethodologySection() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [activeIndex, setActiveIndex] = useState<number | null>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Xác định mobile hay desktop
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1024)
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   const steps = [
     {
@@ -29,9 +39,14 @@ export function MethodologySection() {
       icon: Shield,
       label: "Cẩm nang cá nhân hoá",
       content:
-        "Xây dựng bộ tài liệu riêng giúp bạn duy trì phong độ tự tin và chuyên nghiệp.",
+        "Xây dựng bộ tài liệu riêng duy trì phong độ tự tin và chuyên nghiệp.",
     },
   ]
+
+  const handleClick = (index: number) => {
+    if (!isMobile) return
+    setActiveIndex(activeIndex === index ? null : index)
+  }
 
   return (
     <section className="py-12 sm:py-16 bg-gradient-to-b from-[#dbe4f9] to-[#b9c7e8]">
@@ -53,11 +68,15 @@ export function MethodologySection() {
               key={index}
               className="flex flex-col items-center text-center relative 
                          w-full sm:w-[45%] lg:w-[220px] min-h-[180px] p-4 sm:p-0"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              onMouseEnter={() => !isMobile && setHoveredIndex(index)}
+              onMouseLeave={() => !isMobile && setHoveredIndex(null)}
             >
               {/* Icon */}
-              <div className="flex justify-center items-center w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#1e3a8a] shadow-md transition-transform duration-300 hover:scale-110 mb-4">
+              <div
+                className="flex justify-center items-center w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#1e3a8a] shadow-md 
+                            transition-transform duration-300 hover:scale-110 mb-4 cursor-pointer"
+                onClick={() => handleClick(index)}
+              >
                 <step.icon className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
 
@@ -66,12 +85,15 @@ export function MethodologySection() {
                 {step.label}
               </span>
 
-              {/* Nội dung hiển thị luôn trên mobile, hover trên desktop */}
-              <div className="block lg:hidden text-sm text-black/70 leading-snug max-w-[280px]">
-                {step.content}
-              </div>
+              {/* Nội dung mobile: click mới hiện */}
+              {isMobile && activeIndex === index && (
+                <div className="text-sm text-black/70 leading-snug max-w-[280px] animate-fadeInUp">
+                  {step.content}
+                </div>
+              )}
 
-              {hoveredIndex === index && (
+              {/* Nội dung desktop: hover mới hiện */}
+              {!isMobile && hoveredIndex === index && (
                 <div className="hidden lg:block absolute top-full mt-5 w-64 bg-white text-black text-sm p-4 rounded-xl shadow-lg z-10 animate-fadeInUp">
                   {step.content}
                 </div>
@@ -81,7 +103,7 @@ export function MethodologySection() {
         </div>
       </div>
 
-      {/* Animation keyframes */}
+      {/* Animation */}
       <style jsx>{`
         @keyframes fadeInUp {
           0% {

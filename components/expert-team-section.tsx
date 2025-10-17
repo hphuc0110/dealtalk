@@ -44,33 +44,33 @@ let teachers = [
     experience: "8+ năm kinh nghiệm",
     description:
       "Giáo viên trẻ tài năng với niềm đam mê truyền cảm hứng học tiếng Anh, chuyên về IELTS và tiếng Anh học thuật.",
-    image: "/images/teachers/chung-anh.webp",
+    image: "/images/teachers/chung-anh.jpg",
   },
   {
     id: 2,
     name: "Nguyễn Thu Hằng",
     title: "Giáo viên",
-    specialization: "IELTS & Multi-level Teaching",
+    specialization: "Thành viên Lãnh đạo trẻ Châu Á",
     experience: "7+ năm kinh nghiệm",
     description:
       "Hơn 7 năm kinh nghiệm giảng dạy tiếng Anh đa cấp độ (IELTS, Cambridge). Đào tạo hơn 70 giáo viên tiếng Anh, hơn 500 người đi làm tại các ngành nghề.",
-    image: "/images/teachers/thu-hang.webp",
+    image: "/images/teachers/thu-hang.jpg",
   },
   {
     id: 3,
     name: "Cao Hoàng Hà Anh",
     title: "Giáo viên",
-    specialization: "IELTS & Academic English",
+    specialization: "Thạc sĩ Lý luận và Phương pháp giảng dạy tiếng Anh",
     experience: "5+ năm kinh nghiệm",
     description:
       "Hơn 5 năm giảng dạy IELTS, hơn 2 năm giảng dạy tiếng Anh học thuật cho học sinh Trung học và tiếng Anh chuyên ngành cho người đi làm.",
-    image: "/images/teachers/cao-ha-anh.webp",
+    image: "/images/teachers/ha-anh.jpg",
   },
     {
     id: 4,
     name: "Nguyễn Quý Đạt",
     title: "Giáo viên",
-    specialization: "TOEIC & Business English",
+    specialization: "Trưởng phòng Đào tạo tại Saigon Business School",
     experience: "6+ năm kinh nghiệm",
     description:
       "Hơn 6 năm nghiên cứu giảng dạy TOEIC, hơn 4 năm kinh nghiệm giảng dạy tiếng Anh giao tiếp cho người đi làm.",
@@ -98,12 +98,44 @@ let teachers = [
     id: 7,
     name: "Phạm Kim Cương",
     title: "Giáo viên",
-    specialization: "Conversation & Pronunciation",
+    specialization: "Thạc sĩ Tiếng Anh chuyên ngành Kinh tế – Ngân hàng",
     experience: "8+ năm kinh nghiệm",
     description: "Giáo viên giàu kinh nghiệm trong lĩnh vực tiếng Anh thương mại và kỹ năng viết, từng làm việc tại các công ty quốc tế.",
     image: "/images/teachers/kim-cuong.jpg",
   },
+  
+
+  
+  // {
+  //   id: 5,
+  //   name: "Phùng Yến Linh",
+  //   title: "Giáo viên",
+  //   specialization: "Conversation & Pronunciation",
+  //   experience: "4+ năm kinh nghiệm",
+  //   description: "Chuyên gia về giao tiếp và phát âm, giúp học viên tự tin trong mọi tình huống giao tiếp tiếng Anh.",
+  //   image: "/images/teachers/yen-linh.webp",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Vũ Thị Khánh Vi",
+  //   title: "Giáo viên",
+  //   specialization: "Business English & Writing",
+  //   experience: "6+ năm kinh nghiệm",
+  //   description:
+  //     "Giáo viên giàu kinh nghiệm trong lĩnh vực tiếng Anh thương mại và kỹ năng viết, từng làm việc tại các công ty quốc tế.",
+  //   image: "/images/teachers/vi.webp",
+  // },
+  // {
+  //   id: 7,
+  //   name: "Vũ Bình Dương",
+  //   title: "Giáo viên",
+  //   specialization: "General English & Kids English",
+  //   experience: "3+ năm kinh nghiệm",
+  //   description: "Giáo viên trẻ năng động với khả năng truyền cảm hứng học tập cho mọi lứa tuổi, đặc biệt là trẻ em.",
+  //   image: "/images/teachers/binh-duong.webp",
+  // },
 ]
+
 
 // ✅ Sắp xếp để id 1,2,3 lên đầu
 teachers = teachers.sort((a, b) => {
@@ -130,11 +162,11 @@ export default function ExpertTeamSection() {
     <section id="instructors" className="py-20 bg-gradient-to-b from-gray-50 to-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-4">Đội ngũ giảng viên </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-4">Đội ngũ Giảng viên </h2>
           <h2 className="text-3xl md:text-4xl font-bold text-[#f97316] mb-4">&</h2>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-4">chuyên gia</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Đội ngũ giảng viên & chuyên gia HLE với nhiều năm kinh nghiệm giảng dạy, kết hợp phương pháp học tập thực
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-4">Chuyên gia</h2>
+          <p className="text-lg text-gray-600 text-justify max-w-3xl mx-auto">
+            Đội ngũ Giảng viên & Chuyên gia HLE với nhiều năm kinh nghiệm giảng dạy, kết hợp phương pháp học tập thực
             dụng và cá nhân hóa 1-1, giúp học viên tháo gỡ những khó khăn của riêng mình và tiến bộ rõ rệt trong quá
             trình học.
           </p>
@@ -145,7 +177,7 @@ export default function ExpertTeamSection() {
           <div className="bg-white rounded-2xl p-6 md:p-12 shadow-2xl">
             <div className="text-center mb-12">
               <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                Đội ngũ <span className="text-[#1e3a8a]">chuyên gia</span>
+                Đội ngũ <span className="text-[#1e3a8a]">Chuyên gia</span>
               </h3>
             </div>
             <div className="relative">
@@ -168,7 +200,7 @@ export default function ExpertTeamSection() {
                       <h4 className="font-bold text-xl text-black mb-2">{expert.name}</h4>
                       <p className="text-gray-700 text-sm mb-3">{expert.specialization}</p>
                       <p className="text-gray-500 text-xs mb-4">{expert.experience}</p>
-                      <p className="text-gray-700 text-sm leading-relaxed">{expert.description}</p>
+                      <p className="text-gray-700 text-sm text-justify leading-relaxed">{expert.description}</p>
                     </div>
                   </div>
                 ))}
@@ -176,7 +208,7 @@ export default function ExpertTeamSection() {
               <div className="flex items-center justify-center mt-4 md:hidden">
                 <div className="flex items-center gap-2 bg-green-50 px-4 py-2 rounded-full text-sm text-gray-600">
                   <Swipe className="w-4 h-4" />
-                  <span>Lướt ngang để xem thêm chuyên gia</span>
+                  <span>Lướt ngang để xem thêm Chuyên gia</span>
                 </div>
               </div>
             </div>
@@ -187,7 +219,7 @@ export default function ExpertTeamSection() {
         <div className="bg-white rounded-2xl p-6 md:p-12 shadow-2xl relative">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-              Đội ngũ <span className="text-[#1e3a8a]">giáo viên</span>
+              Đội ngũ <span className="text-[#1e3a8a]">Giáo viên</span>
             </h3>
           </div>
 
@@ -229,7 +261,7 @@ export default function ExpertTeamSection() {
                   <h4 className="font-bold text-xl text-black mb-2">{teacher.name}</h4>
                   <p className="text-gray-700 text-sm mb-2 font-medium">{teacher.specialization}</p>
                   <p className="text-gray-500 text-xs mb-3">{teacher.experience}</p>
-                  <p className="text-gray-700 text-sm leading-relaxed">{teacher.description}</p>
+                  <p className="text-gray-700 text-sm text-justify leading-relaxed ">{teacher.description}</p>
                 </div>
               </div>
             ))}
@@ -238,7 +270,7 @@ export default function ExpertTeamSection() {
           <div className="flex items-center justify-center mt-6">
             <div className="flex items-center gap-2 bg-gradient-to-r from-green-50 to-purple-50 px-6 py-3 rounded-full text-sm text-gray-600 shadow-sm">
               <Swipe className="w-4 h-4 text-green-500" />
-              <span className="font-medium">Lướt ngang để khám phá thêm giáo viên</span>
+              <span className="font-medium">Lướt ngang để khám phá thêm Giáo viên</span>
             </div>
           </div>
         </div>

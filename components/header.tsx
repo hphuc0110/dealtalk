@@ -33,7 +33,7 @@ export function Header() {
                   <img
                     src="/images/dealtalk-logo.png"
                     alt="DealTalk Logo"
-                    className="h-[40px] w-[320px] object-contain"
+                    className="h-[120px] w-[320px] object-contain"
                   />
                 </div>
               </Link>

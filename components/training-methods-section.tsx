@@ -37,10 +37,10 @@ export function TrainingMethodsSection() {
         <div className="text-center mb-16">
           <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 mx-auto max-w-2xl">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 drop-shadow-lg">
-              CÁ NHÂN HÓA TUYỆT ĐỐI
+              Triết lý đào tạo
             </h2>
             <h2 className="text-1xl lg:text-3xl font-bold italic text-white mb-4 drop-shadow-lg">
-              Nội dung được điều chỉnh dựa trên thông tin và thách thức thực tế của học viên
+              sẵn sàng cho mọi biến lớn
             </h2>
           </div>
         </div>

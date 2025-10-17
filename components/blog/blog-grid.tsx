@@ -20,8 +20,30 @@ const blogPosts = [
     title: "Vai Trò Chiến Lược Của Tiếng Anh Trong Kinh Doanh Toàn Cầu",
     image: "/images/3.jpg",
     category: "Phỏng vấn",
+    readTime: "6 phút đọc",
+  },
+  {
+    id: "noi-it-chot-nhieu",
+    title: "Nói ít, chốt nhiều – Nghệ thuật đàm phán của người bán hàng hiện đại",
+    image: "/images/4.png",
+    category: "Phỏng vấn",
     readTime: "7 phút đọc",
   },
+  {
+    id: "pitch-gioi",
+    title: "Pitch giỏi không phải nói hay – mà là khiến người nghe tin",
+    image: "/images/5.png",
+    category: "Phỏng vấn",
+    readTime: "8 phút đọc",
+  },
+  {
+    id: "noi-de-chot",
+    title: "Nói để chốt – Khi tiếng Anh trở thành ngôn ngữ của doanh nhân toàn cầu",
+    image: "/images/6.png",
+    category: "Phỏng vấn",
+    readTime: "7 phút đọc",
+  },
+
 ]
 
 export function BlogGrid() {
@@ -33,16 +55,10 @@ export function BlogGrid() {
           <button className="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
             Tất cả
           </button>
-          <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
-            Phỏng vấn
-          </button>
-          <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
-            Kỹ năng giao tiếp
-          </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {blogPosts.map((post) => (
           <BlogCard key={post.id} post={post} />
         ))}
