@@ -39,6 +39,29 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+
+@keyframes border-run {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  25% {
+    clip-path: inset(0 0 100% 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 100%);
+  }
+  75% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+.before\:animate-border-run::before {
+  animation: border-run 2s linear infinite;
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

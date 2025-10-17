@@ -40,7 +40,7 @@ let teachers = [
     id: 1,
     name: "Nguyễn Thị Chung Anh",
     title: "Giáo viên",
-    specialization: "IELTS & Academic English",
+    specialization: "Thạc sĩ Lãnh đạo toàn cầu",
     experience: "8+ năm kinh nghiệm",
     description:
       "Giáo viên trẻ tài năng với niềm đam mê truyền cảm hứng học tiếng Anh, chuyên về IELTS và tiếng Anh học thuật.",
