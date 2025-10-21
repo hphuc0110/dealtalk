@@ -72,7 +72,7 @@ export function CurriculumSection() {
                 ${
                   selected === module.number
                     ? "bg-[#1e3a8a] text-white scale-[1.02]"
-                    : "bg-orange-500 text-black hover:bg-orange-400 hover:scale-[1.01]"
+                    : "bg-[#1e3a8a] text-white  hover:scale-[1.01]"
                 }`}
             >
               <div className="flex items-center gap-3 mb-2">
